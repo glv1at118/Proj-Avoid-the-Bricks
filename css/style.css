@@ -1,0 +1,244 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-image: url("../img/backgroundImg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+#container{
+  margin: 5px auto;
+  border: 10px solid gray;
+  width: 550px;
+  height: 700px;
+  position: relative;
+  opacity: 0.92;
+}
+.gameOverCover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  background-color: black;
+  width: 550px;
+  height: 700px;
+  display: none;
+}
+.gameOverCover .imgFrame{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  border-radius: 50px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 5px solid red;
+}
+.replayFrame{
+  width: 200px;
+  height: 80px;
+  background-color: white;
+  position: absolute;
+  top: 500px;
+  left: 175px;
+  border-radius: 20px;
+  border: 5px solid red;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-align: center;
+  line-height: 80px;
+}
+.replayFrame:hover{
+  cursor: pointer;
+  border: 5px solid green;
+}
+.cell{
+  float: left;
+  background-color: #c2c2a3;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+.cellChanged{
+  background-color: #663300!important;
+  /* Set it to be important, preventing theme buttons to override its background color */
+}
+#playerBlock{
+  background-image: url("../img/me.png");
+  background-size: contain;
+  position: absolute;
+  top: 650px;
+  left: 250px;
+  width: 50px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid white;
+}
+.leftPanel{
+  background-color: #ffff80;
+  width: 300px;
+  height: 700px;
+  position: absolute;
+  top: 0px;
+  left: -300px;
+  border: 10px solid gray;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-sizing: border-box;
+  padding: 20px;
+  word-wrap: break-word;
+  font-family: "Kristen ITC";
+}
+.leftPanel #btn_start{
+  font-size: 30px;
+  font-family: "Kristen ITC";
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  bottom: 50px;
+  margin: 0px auto;
+  width: 240px;
+  height: 60px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  background-color: orange;
+}
+.leftPanel #btn_start:active{
+  background-color: #404040;
+  color: white;
+}
+.rightPanel{
+  background-color: #ffff80;
+  width: 300px;
+  height: 700px;
+  position: absolute;
+  top: 0px;
+  right: -300px;
+  border: 10px solid gray;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-sizing: border-box;
+  padding: 20px;
+  word-wrap: break-word;
+  font-family: "Kristen ITC";
+}
+.rightPanel #survivalTimer{
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  top: 40px;
+  left: 10px;
+  background-color: #cccccc;
+  border-radius: 10px;
+  border: 5px solid gray;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.rightPanel #highScore{
+  position: absolute;
+  width: 260px;
+  height: 155px;
+  top: 190px;
+  left: 10px;
+  background-color: #cccccc;
+  border-radius: 10px;
+  border: 5px solid gray;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.rightPanel .difficultyBox{
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  top: 395px;
+  left: 10px;
+  background-color: gray;
+  border-radius: 10px;
+  border: 5px solid gray;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+#easy, #medium, #hard, #crazy{
+  float: left;
+  width: 125px;
+  height: 45px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+  line-height: 45px;
+  font-family: "Kristen ITC";
+  font-weight: 700;
+  cursor: pointer;
+}
+#easy:active, #medium:active, #hard:active, #crazy:active{
+  background-color: #404040!important;
+  color: white;
+}
+.rightPanel .themeBox{
+  position: absolute;
+  width: 260px;
+  height: 100px;
+  top: 545px;
+  left: 10px;
+  background-color: gray;
+  border-radius: 10px;
+  border: 5px solid gray;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+#sand, #forest, #ocean, #classic{
+  float: left;
+  width: 125px;
+  height: 45px;
+  border-radius: 5px;
+  outline: none;
+  font-size: 20px;
+  line-height: 45px;
+  font-family: "Kristen ITC";
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+}
+#sand:active, #forest:active, #ocean:active, #classic:active{
+  background-color: #404040!important;
+  color: white;
+}
+
+/* Themebox themes. The sand theme is the original, no need to set */
+.forestGreen{
+  background-color: #c4ff4d;
+}
+.cellForest{
+  background-color: #8cd98c;
+}
+
+.oceanBlue{
+  background-color: #adadeb;
+}
+.cellOcean{
+  background-color: #99bbff;
+}
+
+.classicBlack{
+  background-color: #333333;
+}
+.cellClassic{
+  background-color: #b3b3b3;
+}

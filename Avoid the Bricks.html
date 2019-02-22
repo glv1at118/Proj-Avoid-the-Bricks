@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Avoid the Bricks</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <section id="container">
+      <!-- All the cells in the map use an id combination, c + x + y. Starting from top left corner, x and y start from 0 and 0. Coming towards right-bottom corner, x increases and y increases. -->
+
+      <div class="cell" id="c00"></div>
+      <div class="cell" id="c10"></div>
+      <div class="cell" id="c20"></div>
+      <div class="cell" id="c30"></div>
+      <div class="cell" id="c40"></div>
+      <div class="cell" id="c50"></div>
+      <div class="cell" id="c60"></div>
+      <div class="cell" id="c70"></div>
+      <div class="cell" id="c80"></div>
+      <div class="cell" id="c90"></div>
+      <div class="cell" id="c100"></div>
+
+      <div class="cell" id="c01"></div>
+      <div class="cell" id="c11"></div>
+      <div class="cell" id="c21"></div>
+      <div class="cell" id="c31"></div>
+      <div class="cell" id="c41"></div>
+      <div class="cell" id="c51"></div>
+      <div class="cell" id="c61"></div>
+      <div class="cell" id="c71"></div>
+      <div class="cell" id="c81"></div>
+      <div class="cell" id="c91"></div>
+      <div class="cell" id="c101"></div>
+
+      <div class="cell" id="c02"></div>
+      <div class="cell" id="c12"></div>
+      <div class="cell" id="c22"></div>
+      <div class="cell" id="c32"></div>
+      <div class="cell" id="c42"></div>
+      <div class="cell" id="c52"></div>
+      <div class="cell" id="c62"></div>
+      <div class="cell" id="c72"></div>
+      <div class="cell" id="c82"></div>
+      <div class="cell" id="c92"></div>
+      <div class="cell" id="c102"></div>
+
+      <div class="cell" id="c03"></div>
+      <div class="cell" id="c13"></div>
+      <div class="cell" id="c23"></div>
+      <div class="cell" id="c33"></div>
+      <div class="cell" id="c43"></div>
+      <div class="cell" id="c53"></div>
+      <div class="cell" id="c63"></div>
+      <div class="cell" id="c73"></div>
+      <div class="cell" id="c83"></div>
+      <div class="cell" id="c93"></div>
+      <div class="cell" id="c103"></div>
+
+      <div class="cell" id="c04"></div>
+      <div class="cell" id="c14"></div>
+      <div class="cell" id="c24"></div>
+      <div class="cell" id="c34"></div>
+      <div class="cell" id="c44"></div>
+      <div class="cell" id="c54"></div>
+      <div class="cell" id="c64"></div>
+      <div class="cell" id="c74"></div>
+      <div class="cell" id="c84"></div>
+      <div class="cell" id="c94"></div>
+      <div class="cell" id="c104"></div>
+
+      <div class="cell" id="c05"></div>
+      <div class="cell" id="c15"></div>
+      <div class="cell" id="c25"></div>
+      <div class="cell" id="c35"></div>
+      <div class="cell" id="c45"></div>
+      <div class="cell" id="c55"></div>
+      <div class="cell" id="c65"></div>
+      <div class="cell" id="c75"></div>
+      <div class="cell" id="c85"></div>
+      <div class="cell" id="c95"></div>
+      <div class="cell" id="c105"></div>
+
+      <div class="cell" id="c06"></div>
+      <div class="cell" id="c16"></div>
+      <div class="cell" id="c26"></div>
+      <div class="cell" id="c36"></div>
+      <div class="cell" id="c46"></div>
+      <div class="cell" id="c56"></div>
+      <div class="cell" id="c66"></div>
+      <div class="cell" id="c76"></div>
+      <div class="cell" id="c86"></div>
+      <div class="cell" id="c96"></div>
+      <div class="cell" id="c106"></div>
+
+      <div class="cell" id="c07"></div>
+      <div class="cell" id="c17"></div>
+      <div class="cell" id="c27"></div>
+      <div class="cell" id="c37"></div>
+      <div class="cell" id="c47"></div>
+      <div class="cell" id="c57"></div>
+      <div class="cell" id="c67"></div>
+      <div class="cell" id="c77"></div>
+      <div class="cell" id="c87"></div>
+      <div class="cell" id="c97"></div>
+      <div class="cell" id="c107"></div>
+
+      <div class="cell" id="c08"></div>
+      <div class="cell" id="c18"></div>
+      <div class="cell" id="c28"></div>
+      <div class="cell" id="c38"></div>
+      <div class="cell" id="c48"></div>
+      <div class="cell" id="c58"></div>
+      <div class="cell" id="c68"></div>
+      <div class="cell" id="c78"></div>
+      <div class="cell" id="c88"></div>
+      <div class="cell" id="c98"></div>
+      <div class="cell" id="c108"></div>
+
+      <div class="cell" id="c09"></div>
+      <div class="cell" id="c19"></div>
+      <div class="cell" id="c29"></div>
+      <div class="cell" id="c39"></div>
+      <div class="cell" id="c49"></div>
+      <div class="cell" id="c59"></div>
+      <div class="cell" id="c69"></div>
+      <div class="cell" id="c79"></div>
+      <div class="cell" id="c89"></div>
+      <div class="cell" id="c99"></div>
+      <div class="cell" id="c109"></div>
+
+      <div class="cell" id="c010"></div>
+      <div class="cell" id="c110"></div>
+      <div class="cell" id="c210"></div>
+      <div class="cell" id="c310"></div>
+      <div class="cell" id="c410"></div>
+      <div class="cell" id="c510"></div>
+      <div class="cell" id="c610"></div>
+      <div class="cell" id="c710"></div>
+      <div class="cell" id="c810"></div>
+      <div class="cell" id="c910"></div>
+      <div class="cell" id="c1010"></div>
+
+      <div class="cell" id="c011"></div>
+      <div class="cell" id="c111"></div>
+      <div class="cell" id="c211"></div>
+      <div class="cell" id="c311"></div>
+      <div class="cell" id="c411"></div>
+      <div class="cell" id="c511"></div>
+      <div class="cell" id="c611"></div>
+      <div class="cell" id="c711"></div>
+      <div class="cell" id="c811"></div>
+      <div class="cell" id="c911"></div>
+      <div class="cell" id="c1011"></div>
+
+      <div class="cell" id="c012"></div>
+      <div class="cell" id="c112"></div>
+      <div class="cell" id="c212"></div>
+      <div class="cell" id="c312"></div>
+      <div class="cell" id="c412"></div>
+      <div class="cell" id="c512"></div>
+      <div class="cell" id="c612"></div>
+      <div class="cell" id="c712"></div>
+      <div class="cell" id="c812"></div>
+      <div class="cell" id="c912"></div>
+      <div class="cell" id="c1012"></div>
+
+      <div class="cell" id="c013"></div>
+      <div class="cell" id="c113"></div>
+      <div class="cell" id="c213"></div>
+      <div class="cell" id="c313"></div>
+      <div class="cell" id="c413"></div>
+      <div class="cell" id="c513"></div>
+      <div class="cell" id="c613"></div>
+      <div class="cell" id="c713"></div>
+      <div class="cell" id="c813"></div>
+      <div class="cell" id="c913"></div>
+      <div class="cell" id="c1013"></div>
+
+      <div id="playerBlock"></div>
+
+      <div class="gameOverCover">
+        <div class="imgFrame">
+          <img src="img/gameoverimg.png" alt="image is lost">
+        </div>
+        <div class="replayFrame" id="replay">
+          <img src="img/replay2.png" alt="image is lost">
+        </div>
+      </div>
+
+      <div class="leftPanel">
+        <br /><br />
+        <h2><b>Avoid the Bricks</b></h2>
+        <br /><br />
+        <h2><b>How to play?</b></h2>
+        <br />
+        <p><b>1. Use the arrows keys to move your friend :)<br />2. Help your friend survive as long as possible :)<br />3. You wanna choose a difficulty level? This sounds really crazy :(<br />4. Also select your favorite theme like a hero :)<br />5. Enjoy the good time ~~ :)</b></p>
+        <br /><br />
+        <h2><b>Coded by Guannan</b></h2>
+        <h4>Version: 2.1 released</h4>
+        <button type="button" id="btn_start">Start to play</button>
+      </div>
+
+      <div class="rightPanel">
+
+        <div id="survivalTimer">Your friend survived<br />
+          <span id="survival" style="color:red;">0</span>&nbsp;&nbsp;seconds! Oops!
+        </div>
+
+        <div id="highScore">Historical highest score<br />
+          Easy&nbsp;&nbsp;<span id="highest1" style="color:blue;">0</span>&nbsp;&nbsp;seconds!
+          Medium&nbsp;&nbsp;<span id="highest2" style="color:blue;">0</span>&nbsp;&nbsp;seconds!
+          Hard&nbsp;&nbsp;<span id="highest3" style="color:blue;">0</span>&nbsp;&nbsp;seconds!
+          Crazy&nbsp;&nbsp;<span id="highest4" style="color:blue;">0</span>&nbsp;&nbsp;seconds!
+        </div>
+
+        <div class="difficultyBox">
+          <button type="button" id="easy" style="background-color: lightgreen;">Easy</button>
+          <button type="button" id="medium" style="background-color: yellow;">Medium</button>
+          <button type="button" id="hard" style="background-color: orange;">Hard</button>
+          <button type="button" id="crazy" style="background-color: #ff3333;">Crazy</button>
+        </div>
+
+        <div class="themeBox">
+          <button type="button" id="sand" style="background-color: #cc7a00;">sand</button>
+          <button type="button" id="forest" style="background-color: #336600;">forest</button>
+          <button type="button" id="ocean" style="background-color: #003cb3;">ocean</button>
+          <button type="button" id="classic" style="background-color: #333333;">classic</button>
+        </div>
+
+      </div>
+
+    </section>
+  </body>
+</html>
