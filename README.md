@@ -16,11 +16,14 @@ Have any comments, or bugs discovered? Please kindly give me a notification or h
 
 All game concept, contents, and codes come from my brain :) ... Enjoy, hope it can bring you back the childhood time! Below are some snapshots, together with version update log:
 
+--------------------------------------- version released 2.3 ---------------------------------------
+- Now the game supports local storage in browser. Highest historical scores won't be lost anymore.
+
 --------------------------------------- version released 2.1 ---------------------------------------
 - Now the little friend you control is no longer a smiley block anymore. The beloved Tom comes!
 ![21321](https://user-images.githubusercontent.com/44102726/53023494-5e30b800-342b-11e9-8fae-88bb14747d5d.PNG)
 
---------------------------------------- version Beta 1.1 ---------------------------------------
+--------------------------------------- version Beta 1.1 -------------------------------------------
 - Original released version.
 ![s1](https://user-images.githubusercontent.com/44102726/52963167-13506b00-336d-11e9-86c1-705c4cf3e825.PNG)
 ![s2](https://user-images.githubusercontent.com/44102726/52963168-13506b00-336d-11e9-9c0c-bb43f2e266b3.PNG)
