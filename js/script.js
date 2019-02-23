@@ -33,10 +33,20 @@ $(function(){
   var highestScore2 = 0; /* level medium */
   var highestScore3 = 0; /* level hard */
   var highestScore4 = 0; /* level crazy */
-
   /* Have to use 2 variables, levelIndicator and levelSet to shift and store the level num */
   var levelIndicator = 1; /* indicates the level the user played for the "previous" round */
   var levelSet = 1; /* it changes instantly when the user clicks the level select buttons */
+
+
+  /* Upon web page load, show the historical highest scores from browser cache */
+  highestScore1 = Number(localStorage.getItem("highestScore1"));
+  highestScore2 = Number(localStorage.getItem("highestScore2"));
+  highestScore3 = Number(localStorage.getItem("highestScore3"));
+  highestScore4 = Number(localStorage.getItem("highestScore4"));
+  $("#highest1").html(highestScore1);
+  $("#highest2").html(highestScore2);
+  $("#highest3").html(highestScore3);
+  $("#highest4").html(highestScore4);
 
 
   /* Player's block movement function declaration */
@@ -252,23 +262,31 @@ $(function(){
   /* Display the highest historical score */
   function showHighest(){
     if(levelIndicator === 1){
+      highestScore1 = Number(localStorage.getItem("highestScore1"));
       if(highestScore1 < tStopSeconds){
-        highestScore1 = tStopSeconds;
+        localStorage.setItem("highestScore1", tStopSeconds);
+        highestScore1 = Number(localStorage.getItem("highestScore1"));
         $("#highest1").html(highestScore1);
       }
     } else if(levelIndicator === 2){
+      highestScore2 = Number(localStorage.getItem("highestScore2"));
       if(highestScore2 < tStopSeconds){
-        highestScore2 = tStopSeconds;
+        localStorage.setItem("highestScore2", tStopSeconds);
+        highestScore2 = Number(localStorage.getItem("highestScore2"));
         $("#highest2").html(highestScore2);
       }
     } else if(levelIndicator === 3){
+      highestScore3 = Number(localStorage.getItem("highestScore3"));
       if(highestScore3 < tStopSeconds){
-        highestScore3 = tStopSeconds;
+        localStorage.setItem("highestScore3", tStopSeconds);
+        highestScore3 = Number(localStorage.getItem("highestScore3"));
         $("#highest3").html(highestScore3);
       }
     } else if(levelIndicator === 4){
+      highestScore4 = Number(localStorage.getItem("highestScore4"));
       if(highestScore4 < tStopSeconds){
-        highestScore4 = tStopSeconds;
+        localStorage.setItem("highestScore4", tStopSeconds);
+        highestScore4 = Number(localStorage.getItem("highestScore4"));
         $("#highest4").html(highestScore4);
       }
     }
