@@ -259,7 +259,7 @@ $(function(){
   }
 
 
-  /* Display the highest historical score */
+  /* Display the highest historical score and also store the highest score (if exists) to local cache */
   function showHighest(){
     if(levelIndicator === 1){
       highestScore1 = Number(localStorage.getItem("highestScore1"));
@@ -355,5 +355,11 @@ $(function(){
     $(".cell").removeClass("cellOcean");
     $(".cell").removeClass("cellClassic");
   }
+
+
+  /* Upon the browser unload - close, refresh..., invoke the showHighest(), to store the highest level score, if exists, to the browser cache. At the same time, show the highest score if possible. This ensures the highest score can always be saved to local cache, even when the user do not click replay after game is over, but instead close the browser directly. */
+  $(window).on("unload", function(){
+    showHighest();
+  });
 
 });
