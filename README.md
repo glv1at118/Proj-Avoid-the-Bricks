@@ -2,7 +2,7 @@
 
 This is an interesting web page game project. You need to help your little friend (it's Tom now!) dodge the bricks.
 
-Created this game with vanilla HTML and CSS, together with Javascript (and jQuery). The design and coding experience is interesting, and rewarding. Will keep updating the game with new gameplay contents. Save on local machine and multiple lives are in plans.
+Created this game with vanilla HTML and CSS, together with Javascript (and jQuery). The design and coding experience is interesting, and rewarding. Will keep updating the game with new gameplay contents.
 
 Things that you can do in the game:
 - Use the arrow keys (up, down, left, right) to control your block, which is the deep pink one.
