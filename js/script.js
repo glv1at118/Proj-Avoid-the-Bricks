@@ -15,6 +15,7 @@ $(function(){
   var $playerBlock = $("#playerBlock");
   var playerX = 5; /* initial player's block x coordinate */
   var playerY = 13; /* initial player's block y coordinate */
+  var positionID = ""; /* play block's coordinate ID. Will be used later */
   /* Game difficulty level -- Set the time interval for block dropping down */
   var levelEasy = 500;
   var levelMedium = 350;
@@ -98,11 +99,8 @@ $(function(){
         genID_str2 = "#c" + genX2 + genY2;
         $(genID_str2).toggleClass("cellChanged");
 
-        /* Clear the dropdown timer. Otherwise there will be so many dropdown timers running background */
+        /* Clear the dropdown timer. Otherwise there will be so many dropdown timers running background. genY1 will always be equal to genY2. So if genY1 reaches out of the bottom, then genY2 is the same. */
         if(genY1 >= 14){
-          clearInterval(timerDropDown);
-        }
-        if(genY2 >= 14){
           clearInterval(timerDropDown);
         }
 
@@ -173,7 +171,7 @@ $(function(){
 
   /* A mechanism to judge if the player's block clashes with the generated block */
   setInterval(function(){
-    var positionID = "#c" + playerX + playerY;
+    positionID = "#c" + playerX + playerY;
     if($(positionID).hasClass("cellChanged")){
       clearInterval(timerGen); /* Stop generating new blocks */
       $(".gameOverCover")[0].style.display = "block"; /* Display the gameOverCover */
