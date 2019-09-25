@@ -12,7 +12,7 @@ Things that you can do in the game:
 - See the scoreboards for historical highest record info, for different difficulty levels.
 - More...
 
-Have any comments, or bugs discovered? Please kindly give me a notification or help make improvements.
+Have any comments, or bugs discovered? Please kindly give me a notification or help make improvements. Live Demo here: https://glv1at118.github.io/Proj-Avoid-the-Bricks/Avoid%20the%20Bricks.html
 
 All game concept, contents, and codes come from my brain :) ... Enjoy, hope it can bring you back the childhood time! Below are some snapshots, together with version update log:
 
